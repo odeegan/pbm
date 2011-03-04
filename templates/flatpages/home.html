@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block head %}{{ block.super }}
+    <link rel="stylesheet" type="text/css" href="/media/css/home.css" /><html>
+{% endblock %}
+
+{% block body %}
+        <img class="bg" src="{{ flatpage.randomImage.url }}"> 
+{% endblock %} 
+

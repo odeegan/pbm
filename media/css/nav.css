@@ -1,0 +1,152 @@
+div#navigation {
+	position: relative;
+	z-index: 50;
+	left: 0px;
+	top: 10px;
+    background-image: url('/media/images/navigation.jpg');
+    backround-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 114px;
+    height: 224px;
+}
+
+
+div#navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100px;
+}
+       
+div#navigation ul li {
+    position: relative;
+}
+   
+div#navigation ul li ul {
+    position: absolute;
+    left: 100px;
+    padding-left: 15px;
+    top: 0;
+    display: none;
+    width: 114px;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; }
+* html ul li a { height: 1%; }
+/* End */
+
+div#navigation li:hover ul, li.over ul { 
+    display: block; 
+}
+
+
+div#navigation li a {
+    display: block;
+    background-image: url('/media/images/nav_text.jpg');
+    backround-repeat: no-repeat;
+    position:relative;
+    left: 4px;
+    width: 105px;
+    height: 75px;
+    text-indent: -9999px;   
+}
+
+div#navigation li ul li a {
+    width: 109px;
+    height: 77px;
+}
+
+div#navigation li#main-nav-home a{
+    background-position: 0px 0px;
+    top: 5px;
+}
+
+div#navigation li#main-nav-blog a{
+    background-position: 0px 130px;
+    height: 27px;
+    top: 2px;
+}
+
+div#navigation li#main-nav-portfolio a{
+    background-position: 0px 100px;
+    height: 27px;
+}
+
+div#navigation li#main-nav-sessions a{
+    background-position: 0px 68px;
+    height: 27px;
+}
+
+div#navigation li#main-nav-contact a{
+    background-position: 0px 38px;
+    height: 27px;
+}
+
+div#navigation li#main-nav-blog a:hover{
+    background-position: 328px 130px; 
+}
+
+div#navigation li#main-nav-portfolio a:hover{
+    background-position: 328px 100px; 
+}
+
+div#navigation li#main-nav-sessions a:hover{
+    background-position: 328px 68px; 
+}
+
+div#navigation li#main-nav-contact a:hover{
+    background-position: 328px 38px;    
+}
+
+                /* Portfolio SubMenu */
+
+div#navigation li#nav-engagement a{
+    background-position: 229px 190px;    
+}
+
+div#navigation li#nav-maternity a{
+    background-position: 229px 160px;    
+}
+
+div#navigation li#nav-newborn a{
+    background-position: 229px 130px;    
+}
+
+div#navigation li#nav-children a{
+    background-position: 229px 100px;    
+}
+
+div#navigation li#nav-family a{
+    background-position: 229px 70px;    
+}
+
+div#navigation li#nav-seniors a{
+    background-position: 229px 38px;    
+}
+
+div#navigation li#nav-engagement a:hover{
+    background-position: 112px 190px;    
+}
+
+div#navigation li#nav-maternity a:hover{
+    background-position: 112px 160px;    
+}
+
+div#navigation li#nav-newborn a:hover{
+    background-position: 112px 130px;    
+}
+
+div#navigation li#nav-children a:hover{
+    background-position: 112px 100px;    
+}
+
+div#navigation li#nav-family a:hover{
+    background-position: 112px 70px;    
+}
+
+div#navigation li#nav-seniors a:hover{
+    background-position: 112px 38px;    
+}
+
+

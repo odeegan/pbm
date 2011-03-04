@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Me{% endblock %}
+
+{% block bodyclass %}contact{% endblock %}
+
+{% block header %}{{ block.super }}
+    <div id="banner">
+        <img class="bg" src="/media/images/banner.jpg">    
+        <span id="banner_txt">"Which of my photographs is my favorite? The one I'm going to take tommrow." -Imogen Cunningham</span> 
+    </div>
+{% endblock %}
+
+
+{% block content %}
+	{% if sent %}
+		<p class="flash flashnotice">Thanks for your message. I’ll read it and respond as soon as I can.</p>
+	{% endif %}
+	<form action="{% url contact_send_message %}" method="post">{% csrf_token %}
+		<fieldset>
+			{{ form.sender_name.errors }}
+			<p id="field_{{ form.sender_name.html_name }}">
+			<div>{{ form.sender_name.label }}</div>
+				{{ form.sender_name }}
+			</p>
+			{{ form.sender_email.errors }}
+			<p id="field_{{ form.sender_email.html_name }}">
+			<div>{{ form.sender_email.label }}</div>			
+				{{ form.sender_email }}
+			</p>
+			{{ form.body.errors }}
+			<p id="field_{{ form.body.html_name }}">
+			<div>{{ form.body.label }}</div>
+				{{ form.body }}
+			</p>
+			{{ form.ham_trap.errors }}
+			<p id="field_{{ form.ham_trap.html_name }}">
+				{{ form.ham_trap.label_tag }}
+				{{ form.ham_trap }}
+			</p>
+			<button id="button" type="submit">Send</button>
+		</fieldset>
+	</form>
+	<div id="contact-info">
+		<div id="text">
+			<h3>prefer to mail me directly?</h3>
+			<p>monika@photosbymonika.com</p>
+			<h3>home base</h3>
+			<p>Manhattan Beach, CA 90266 <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=90266&aq=&sll=33.885451,-118.410902&sspn=0.040115,0.077162&ie=UTF8&hq=&hnear=Manhattan+Beach,+California+90266&z=13"><img id="pin" src="/media/images/pin.jpg"></a></p>
+			<h3>reviews</h3>
+			<p><a href="http://www.yelp.com/biz/photos-by-monika-manhattan-beach-2"><img id="yelp" src="/media/images/yelp.jpg"></a></p>
+			<h3>elsewhere on the web</h3>
+			<p>
+			<a href="http://www.facebook.com/pages/Photos-By-Monika/125926834112915"><img id="facebook" src="/media/images/facebook.jpg"></a>
+			<a href="http://twitter.com/PhotosbyMonika"><img src="/media/images/twitter.jpg"></a>
+			</p>
+		<div id="text">
+	</div>
+{% endblock %}
+
+

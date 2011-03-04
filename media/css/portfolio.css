@@ -1,0 +1,185 @@
+div#navigation {
+	position: absolute;
+	z-index: 50;
+	left: 30px;
+	top: 30px;
+}
+
+div#wrapper {
+	margin-left: 140px;
+	width: 800px;
+}
+
+div#content {
+    position: absolute;
+    top: 0px;
+    width: 800px;
+    margin: 0px;
+    top: 9px;
+}
+
+div.content {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: none;
+	width: 800px;
+	position:absolute;
+}
+div.content a, div.navigation a {
+	text-decoration: none;
+	color: #777;
+	
+}
+
+div.slideshow-container {
+	height: 534px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('/media/images/loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 800px;
+	height: 534px; /* This should be set to be at least the height of the largest image in the slideshow */
+	
+}
+div.slideshow {
+
+}
+
+div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+div.slideshow a.advance-link {
+	display: block;
+	width: 800px;
+	height: 533px; /* This should be set to be at least the height of the largest image in the slideshow */
+	text-align: center;
+}
+
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+
+div.slideshow img {
+	vertical-align: middle;
+}
+
+
+div.navigation {
+	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+}
+
+ul.thumbs {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+ul.thumbs li {
+	float: left;
+	padding: 0;
+	/*margin: 5px 10px 5px 0;*/
+	margin: 0px 0px 0px 0px;
+	list-style: none;
+}
+
+a.thumb {
+	/*padding: 2px;*/
+	display: block;
+	/*border: 1px solid #ccc;*/
+}
+
+ul.thumbs li.selected a.thumb {
+	background: #000;
+}
+
+a.thumb:focus {
+	outline: none;
+}
+
+ul.thumbs img {
+	border: none;
+	display: block;
+}
+
+div.pagination {
+	clear: both;
+}
+
+div.navigation div.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+
+div#controls {
+	position: absolute;
+	top:558px;
+}
+
+div#controls a{
+	position: absolute;
+	background-image: url('/media/images/arrow.jpg');
+	backround-repeat: no-repeat;
+	height: 63px;
+	width: 18px;
+	display: block;
+	text-indent: -9999px;
+	background-color: #ccc;
+}
+
+a.prev {
+	background-position: 0px 0px;
+}
+
+a.next {
+	left: 784px;
+	background-position: 0px 65px;
+}
+
+
+div#controls a:hover {
+	background-color: #666;
+}
+
+a.prev:hover {
+	background-position: 18px 0px;
+}
+
+a.next:hover {
+	background-position: 18px 65px;
+}
+
+
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 2px 5px 2px 5px;
+	border: 1px solid #ccc;
+}
+
+
+
+div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+
+div.pagination span.current {
+	font-weight: bold;
+	background-color: #000;
+	/*border-color: #000;*/
+	color: #fff;
+}
+
+div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}

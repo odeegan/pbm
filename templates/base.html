@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "=//W3C//DTD XHTML 1.0 Strict//EN"
+				"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    {% block head %}
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/media/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/pbm.css" />
+    {% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body class="{% block bodyclass %}{% endblock %}">
+	{% block body %}
+	{% endblock %}
+	<div id="wrapper">
+		<div id="header">
+		  {% block header %}
+            <div id="navigation">
+                <ul> 
+                    <li id="main-nav-home"><a href="/home/">Home</a></li> 
+                    <li id="main-nav-blog"><a href="/blog/">Blog</a></li> 
+                    <li id="main-nav-portfolio"><a href="#">Portfolio</a> 
+                        <ul> 
+                            <li id="nav-maternity"><a href="/portfolio/maternity/">Maternity</a></li> 
+                            <li id="nav-newborn"><a href="/portfolio/newborn/">Newborn</a></li> 
+                            <li id="nav-children"><a href="/portfolio/children/">Children</a></li> 
+                            <li id="nav-family"><a href="/portfolio/family/">Family</a></li>
+                            <li id="nav-seniors"><a href="/portfolio/seniors/">Seniors</a></li> 
+                        </ul> 
+                    </li>
+                    <li id="main-nav-sessions"><a href="/sessions/">Sessions</a></li>
+                    <li id="main-nav-contact"><a href="{% url contact_send_message %}">Contact</a></li>    
+                </ul>
+            </div>
+		  {% endblock %}
+		</div>
+	    <div id="content">
+		  {% block content %}
+		  {% endblock %}
+        </div>
+          {% block footer %}
+          {% endblock %}
+	</div>
+</body>
+</html>

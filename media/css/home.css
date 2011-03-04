@@ -1,0 +1,25 @@
+body {
+  overflow: hidden;
+}
+
+
+img.bg {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:-1;
+}
+
+
+div#navigation {
+	position: absolute;
+	z-index: 50;
+	left: 25px;
+	top: 25px;
+}
+
+
+
+

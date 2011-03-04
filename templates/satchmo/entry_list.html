@@ -1,0 +1,74 @@
+{% extends "base_entries.html" %}
+
+{% block title %}{{ block.super }} | Latest entries{% endblock %}
+
+{% block content %}
+	<div id="facebook-meta"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fphotosbymonika.com%2Fblog%2F' . $thePostDateFIXED . '%2F' . $thePostURL . '%2F&amp;layout=button_count&amp;show_faces=true&amp;width=100&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></div>
+	{% load comments %}
+	{% for entry in object_list %}
+		<h2 class="post_title"><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h2>
+		<div id="date">{{ entry.pub_date|date:"M j, Y" }}</div>
+		{% get_comment_count for entry as comment_count %}
+		  	<div id="comment_count"><a href="#post{{ entry.id }}">{{ comment_count }}
+		  	{% if comment_count == 1 %}
+		  	Comment
+		  	{% else %}
+		  	Comments
+		  	{% endif %}
+		  	</a></div>
+		  	<div id="line"></div>
+		  	<div id="post">{{ entry.body|safe }}</div>
+ 			<h3>
+	    		{% if comment_count == 1 %}
+	    			<a name="post{{ entry.id }}">{{ comment_count }} Comment</a>
+	    		{% else %}
+	    			<a name="post{{ entry.id }}">{{ comment_count }} Comments</a>
+	    		{% endif %}
+				<span id="post_comment"><a href="{{ entry.get_absolute_url }}#post_comment">Leave a Comment</a></span>
+			</h3>
+			{% if comment_count > 0 %}	   
+				{% if comment_count > 8 %}
+		  			<div id="comments" style="overflow:scroll; height:200px;">
+		  		{% else %}
+		  			<div id="comments">	
+		  		{% endif %}
+		  		{% load comments %}
+				{% get_comment_list for entry as comment_list %}
+				{% if comment_list %}
+					{% for comment in comment_list %}
+		    			<ul><span id="commenter">[{{ comment.name }}]</span><li> | {{ comment.comment|safe }}</li></ul>
+		  			{% endfor %} 
+	       			</div>
+	       		{% endif %}
+	       	{% else %}
+	       		<div id="nocomments"></div>		
+	       {% endif %}	       
+	{% endfor %}
+		<div id="pagination">
+			{% if page_obj.has_previous %}
+				<a class="pagination" href="?page={{ page_obj.previous_page_number }}"><< Previous</a>
+			{% endif %}
+			<div id="history">
+			<span class="current">
+				Page {{ page_obj.number }} of {{ paginator.num_pages }}
+			</span>
+			{% if page_obj.has_next %}
+				<a class="pagination" href="?page={{ page_obj.next_page_number }}">Next >></a>
+			{% endif %}
+			</div>
+		</div>
+{% endblock %}
+
+{% block footer %}
+	<div id="social-bar">
+		<ul>
+		<div><a id="facebook" href="http://www.facebook.com/pages/Photos-By-Monika/125926834112915">Facebook</a></div>
+		<div><a id="rss" href="/feeds/entries/">RSS</a></div>
+		<div><a id="twitter" href="http://twitter.com/PhotosbyMonika">Twitter</a></div>
+		<div><a id="contact" href="http://localhost:8000/contact/">Contact</a></div>
+		</ul>
+	</div>
+{% endblock%}
+
+
+
