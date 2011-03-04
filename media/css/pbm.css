@@ -1,0 +1,481 @@
+                                /* GLOBAL */
+
+img {
+    border-style: none;
+}
+
+a {
+    outline: 0;
+}
+
+
+								/* HEADER AND NAVIGATION */
+
+
+div#wrapper {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#header {
+	height: 224px;
+}
+
+div#banner {
+	position: relative;
+	left: 116px;
+	top: -214px;
+	width: 686px;
+	background-color: #CCC;
+	height: 224px;
+	}
+
+div#banner span {
+	font-family: PT Sans, arial;
+	font-style: italic;
+	font-size: 13px;
+	color: white;
+	margin-left: 15px;
+}
+
+
+/* CONTENT */
+
+div#content {
+	font-family: PT Sans, arial;
+	position: relative;
+	top: 45px;
+	color: #727272;
+	margin-bottom: 90px;
+}
+
+a {
+	text-decoration: none;
+	color: #727272;
+}
+
+
+h2 {
+	font-family: PT Sans Narrow, arial;
+	margin-top: 0px;
+	margin-bottom: 4px;
+	font-style: normal;
+	font-size: 28px;
+}
+
+
+
+
+								/* BLOG  */
+
+
+div#post {
+	padding: 10px 10px 30px 10px;
+}
+
+div#post a {
+	color: #A9A546;
+	text-decoration: underline; 
+}
+
+h2.post_title {
+	width: 600px;
+}
+
+
+div#post img {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+div#line {
+	width: 800px;
+	height: 2px;
+	background-color: #D3D3D3;
+}
+
+div#facebook-meta {
+	float: right;
+	margin-top: 13px;
+	margin-right: 250px;
+	width: 80px;
+	font-size: 14px;
+}
+
+div#date {
+	float: right;
+	margin-top: -29px;
+	margin-right: 122px;
+	background-color: #E5E4C7;
+	width: 94px;
+	text-align: center;
+	font-size: 14px;
+	padding: 3px 2px 3px 2px;
+}
+
+div#comment_count {
+	float: right;
+	margin-top: -29px;
+	text-align: center;
+}
+
+div#comment_count a {
+	display: block;
+	width: 110px;
+	padding: 3px 2px 3px 2px;
+	background-color: #E5E4C7;
+	font-size: 14px;	 
+} 
+
+
+
+div#comment_count a:hover{
+	background-color: #CCC;
+}
+
+
+#social-bar {
+	background-color: #D3D3D3;
+	height: 37px; 
+	width: 800px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#social-bar div {
+	position: relative;
+	float:left;
+	padding: 0px 10px 0px 0px;
+}
+
+#social-bar div a {
+	display: block;
+	height: 37px;
+	width: 170px;
+	text-indent: -9999px;
+	background-image: url('/media/images/social_bar.jpg');
+	backround-repeat: no-repeat;	
+}
+
+
+a#facebook{
+	background-position: 0px 0px;
+}
+
+a#rss{
+	background-position: -200px 0px;
+}
+
+a#twitter{
+	background-position: -400px 0px;
+}
+
+a#contact{
+	background-position: -600px 0px;
+}
+
+a#facebook:hover{
+	background-position: 0px 36px; 
+}
+
+a#rss:hover{
+	background-position: -200px 36px; 
+}
+a#twitter:hover{
+	background-position: -400px 36px;
+}
+a#contact:hover{
+	background-position: -600px 36px;
+}
+
+
+div#pagination {
+	margin: 20px 0px 0px 0px;
+	font-size: 15px;
+}
+
+a.pagination {
+	color: #FFF;
+	background-color: #CCC;
+	padding: 2px 5px 2px 5px;
+}
+
+
+
+div#history {
+	position: relative;
+	left: 654px;
+	top: -22px;
+	width: 150px;
+}
+
+
+
+								/* CONTACT  */
+
+body.contact div#content {
+	top: 15px;
+}
+
+form, fieldset {
+	margin: 0px 0px 0px 10px;
+	width: 420px;
+	border: 0px;
+	padding: 0px;
+	float: left;
+}
+
+input, textarea{
+	border: none;
+	width: 300px;
+	height: 34px; 
+	font-size: 15px;
+	color: #727272;
+	font-family: PT Sans, arial;
+	padding-left: 10px;	
+	margin-left: 38px;
+	border: 1px solid grey;
+}
+
+textarea {
+	position: relative;
+	left: -24px;
+	height: 138px;
+}
+
+p#field_sender_name + div, p#field_sender_email + div, p#field_body + div {
+	float: left;
+	position: relative;
+	top: 4px;
+}
+
+button {
+	position: absolute;
+	background-color: #9E9E9E;
+	border: 1px solid grey;
+	font-size: 15px;
+	color: white;
+	height: 32px;
+	width: 100px;
+	left: 300px;
+	top: 275px;
+}
+
+button:hover {
+	background-color: #7E7E7E;
+}
+
+
+#field_ham_trap {
+	display:none;
+}
+
+div#contact-info {
+	position: relative;
+	float: right;
+	/*border-left: 2px solid #9E9E9E;*/
+	width: 320px;
+	height: 280px;
+	top: 15px;
+	padding-left: 50px;
+}
+
+div#contact-info h3{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+div#contact-info p{
+	margin: 0px 0px 20px 0px;
+}
+
+div#contact-info img#pin {
+	position: relative;
+	top: 7px;
+}
+
+div#contact-info img#yelp {
+	position: relative;
+	margin-left: -6px;
+}
+
+img#facebook {
+	margin-right: 8px;
+}
+
+								/* SESSIONS  */
+
+body.sessions div#content ul {
+	width: 300px;
+	margin: 7px 0px 0px 18px;
+	font-style: italic;
+}
+
+body.sessions div#content ul {
+	list-style: disc;
+	margin-left: 25px;
+	padding-left: 0px;
+}
+
+
+
+
+div#right_txt {
+	position: absolute;
+	width: 375px;
+	top: 40px;
+	left: 420px;
+}
+
+div#left_txt {
+	width: 350px;
+	left: 20px;
+	font-style: italic;	
+}
+
+div#left_txt p {
+	margin: 40px 0px 0px 60px;
+}
+
+div#left_txt p a {
+	text-decoration: underline;
+}
+
+img#collage2 {
+	position: absolute;
+	left: 380px;
+	top: 210px;
+}
+
+
+								/* COMMENTS  */
+
+
+div#comments {
+	width: 800px;
+	color: #A7A7A7;
+	font-size: 14px;
+	font-style: italic;
+	padding: 5px 0px 5px 0px;
+	margin-bottom: 60px;
+	border-top: 2px solid #CCC;
+	border-left: 2px solid #CCC;
+}
+
+div#nocomments {
+	margin-bottom: 60px;
+}
+
+
+div#comments ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px 0px 0px 5px;;
+}
+
+div#comments ul li {
+	display:inline;
+}
+
+div#comments h3 {
+	font-style: normal;
+	margin: 0px;
+	padding: 3px 0px 3px 0px;
+}
+
+
+span#commenter {
+	color: #444444;
+	font-size: 15px;
+	font-style: bold;
+}
+
+span#post_comment {
+	margin-left: 20px;
+	width: 110px;
+}
+
+span#post_comment a {
+	padding: 2px 4px 2px 4px;
+	background-color: #E5E4C7;
+	font-weight: 100;
+	color: #727272;
+	width: 110px;
+	font-size: 14px;
+}
+
+span#post_comment a:hover {
+	background-color: #CCC;
+}
+
+
+body.archive form {
+	margin-left: 170px;
+	width: 420px;
+	border: 0px;
+	padding: 0px;
+	height: 400px;
+	
+}
+
+body.archive input{
+	border: none;
+	width: 300px;
+	height: 34px; 
+	font-size: 15px;
+	color: #727272;
+	font-family: PT Sans, arial;
+	border: 1px solid grey;
+}
+
+body.archive textarea {
+	height: 138px;
+	left: -27px;
+}
+
+body.archive label {
+	float: left;
+}
+
+body.archive input[type="submit"] {
+	background-color: #9E9E9E;
+	width: 100px;
+	left: 260px;
+	height: 32px;
+	color: white;
+	margin-left: 285px;
+}
+
+
+body.archive input[type="submit"]:hover {
+	background-color: #7E7E7E;
+}
+
+body.archive a[name="post_comment"] {
+	margin-left: 170px;
+}
+
+
+
+								/* 404, 500  */
+
+
+
+body.error div#content {
+	top: -150px;
+	left: 200px;
+}
+
+
+
+
+
+
+
+
+

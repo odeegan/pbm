@@ -1,0 +1,21 @@
+{% extends "base_entries.html" %}
+
+{% block title %}{{ block.super }} | Archive{% endblock %}
+
+{% block bodyclass %}archive{% endblock %}
+
+{% block content %}
+	<div id="facebook-meta"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fphotosbymonika.com%2Fblog%2F' . $thePostDateFIXED . '%2F' . $thePostURL . '%2F&amp;layout=button_count&amp;show_faces=true&amp;width=100&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></div>
+	{% load comments %}
+	<h2><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h2>
+	<div id="date">{{ object.pub_date|date:"M j, Y" }}</div>
+	{% get_comment_count for object as comment_count %}
+	<div id="comment_count">{{ comment_count }} Comments</div>
+	<div id="line"></div>
+	<div id="post">{{ object.body|safe }}</div>
+	<h3><a name="post_comment">Leave a comment</a></h3>
+	
+	{% render_comment_form for object %}
+{% endblock %}
+
+	

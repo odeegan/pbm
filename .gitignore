@@ -1,0 +1,47 @@
+###################
+# Sensitive Files #
+###################
+
+settings.py
+
+
+############
+# Packages #
+############
+
+*.tgz
+*.tar
+*.zip
+
+
+###########################
+# Logs and Database Files #
+###########################
+
+*.sql
+*.log
+*.sqlite
+
+
+###################
+# Generated Files #
+###################
+
+*.pyc
+
+
+
+##########
+# Images #
+##########
+
+/media/uploads/*
+/media/wp_content/*
+
+
+##############
+# temp files #
+##############
+
+*.bak
+*.swp

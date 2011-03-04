@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Sessions{% endblock %}
+
+{% block bodyclass %}sessions{% endblock %}
+
+{% block header %}{{ block.super }}
+    <div id="banner">
+        <img class="bg" src="/media/images/banner.jpg">
+        <span id="banner_txt">"Which of my photographs is my favorite? The one I'm going to take tommrow." -Imogen Cunningham</span>    
+    </div>
+{% endblock %}
+
+{% block content %}
+
+<img id="collage1" src="/media/images/collage1.jpg">
+
+<div id="right_txt">
+<strong>Sessions start at $250</strong>
+<ul>
+	<li>The session fee is for creative time and talent only and does not include images or digital negatives.</li>
+	<li>Images can be purchased a la carte or as part of a package.</li>
+</ul>
+</div>
+
+
+<div id="left_txt">
+<p>Please <a href="/contact/">inquire</a> for additional information about packages and pricing.</p>
+</div>
+
+<img id="collage2" src="/media/images/collage2.jpg">
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head %}{{ block.super }}
+    <link rel="stylesheet" href="/media/css/blog.css" type="text/css" />   
+{% endblock %}
+
+{% block title %}Blog{% endblock %}
+
+
+{% block bodyclass %}entries{% endblock %}
+
+{% block header %}{{ block.super }}
+    <div id="banner">
+        <img class="bg" src="/media/images/banner.jpg"><br />
+        <span id="banner_txt">"Which of my photographs is my favorite? The one I'm going to take tommrow." -Imogen Cunningham</span> 
+    </div>
+{% endblock %}

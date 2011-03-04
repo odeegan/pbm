@@ -1,0 +1,31 @@
+{% extends "base_portfolio.html" %}
+
+
+
+{% block title %}{{ block.super }} | {{ slideshow.page_title }}{% endblock %}
+
+
+{% block content %}
+	<div id="gallery" class="content"> 
+		<div id="controls" class="controls"></div> 
+			<div class="slideshow-container"> 
+				<div id="loading" class="loader"></div> 
+				<div id="slideshow" class="slideshow"></div> 
+			</div> 
+			<div id="caption" class="caption-container"></div> 
+		</div> 
+	<div id="thumbs" class="navigation"> 
+		<ul class="thumbs noscript"> 
+			{% for image in slideshow.image_set.all %}
+				<li> 
+					<a class="thumb" href="{{ image.url }}"> 
+						<img src="{{ image.get_thumb }}" /> 
+					</a> 
+					<div class="caption"></div> 
+				</li> 
+			{% endfor %}		
+		</ul> 
+	</div> 
+	<div style="clear: both;"></div> 
+
+{% endblock %}
