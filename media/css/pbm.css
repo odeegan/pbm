@@ -27,7 +27,8 @@ div#banner {
 	left: 116px;
 	top: -214px;
 	width: 686px;
-	background-color: #CCC;
+	/*background-color: #CCC;*/
+	background-color: #727272;
 	height: 224px;
 	}
 
@@ -35,7 +36,7 @@ div#banner span {
 	font-family: PT Sans, arial;
 	font-style: italic;
 	font-size: 13px;
-	color: white;
+	color: lightgray;
 	margin-left: 15px;
 }
 
