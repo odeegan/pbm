@@ -32,7 +32,6 @@
 		  		{% else %}
 		  			<div id="comments">	
 		  		{% endif %}
-		  		{% load comments %}
 				{% get_comment_list for entry as comment_list %}
 				{% if comment_list %}
 					{% for comment in comment_list %}
@@ -42,7 +41,7 @@
 	       		{% endif %}
 	       	{% else %}
 	       		<div id="nocomments"></div>		
-	       {% endif %}	       
+	        {% endif %}	       
 	{% endfor %}
 		<div id="pagination">
 			{% if page_obj.has_previous %}
