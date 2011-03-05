@@ -48,6 +48,7 @@ div#content {
 	top: 45px;
 	color: #727272;
 	margin-bottom: 90px;
+	font-size: 14px;
 }
 
 a {
@@ -71,7 +72,7 @@ h2 {
 
 
 div#post {
-	padding: 10px 10px 30px 10px;
+	padding: 10px 0px 30px 0px;
 }
 
 div#post a {
@@ -81,6 +82,7 @@ div#post a {
 
 h2.post_title {
 	width: 600px;
+	/*padding-left: 7px;*/
 }
 
 
@@ -359,7 +361,7 @@ img#collage2 {
 div#comments {
 	width: 800px;
 	color: #A7A7A7;
-	font-size: 14px;
+	font-size: 13px;
 	font-style: italic;
 	padding: 5px 0px 5px 0px;
 	margin-bottom: 60px;
@@ -406,7 +408,7 @@ span#post_comment a {
 	font-weight: 100;
 	color: #727272;
 	width: 110px;
-	font-size: 14px;
+	font-size: 13px;
 }
 
 span#post_comment a:hover {
