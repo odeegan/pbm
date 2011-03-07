@@ -1,5 +1,10 @@
                                 /* GLOBAL */
 
+html {
+	height: 100%;
+	margin-bottom: 1px;
+}
+
 img {
     border-style: none;
 }
