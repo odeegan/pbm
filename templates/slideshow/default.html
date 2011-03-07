@@ -16,7 +16,7 @@
 		</div> 
 	<div id="thumbs" class="navigation"> 
 		<ul class="thumbs noscript"> 
-			{% for image in slideshow.image_set.all %}
+			{% for image in images %}
 				<li> 
 					<a class="thumb" href="{{ image.url }}"> 
 						<img src="{{ image.get_thumb }}" /> 
