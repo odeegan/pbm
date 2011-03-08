@@ -13,7 +13,7 @@ object_detail_entry_dict = {
     'slug_field': 'slug',
     }
 
-feeds = {'entries': LatestEntriesFeed}
+feeds = {'atom': LatestEntriesFeed}
 
 
 urlpatterns = patterns('',
