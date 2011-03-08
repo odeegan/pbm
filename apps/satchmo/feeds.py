@@ -11,7 +11,7 @@ class LatestEntriesFeed(Feed):
     feed_type = Atom1Feed
     item_author_name = "Monika O'Deegan"
     item_author_link = "Monika O'Deegan"
-    link = "/feeds/entries/"
+    link = "/feeds/atom/"
     title = "%s: Latest entries" % current_site.name
 
     def items(self):
