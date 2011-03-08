@@ -108,9 +108,9 @@ div#line {
 }
 
 div#facebook-meta {
-	float: right;
+	position: absolute;
 	margin-top: 13px;
-	margin-right: 250px;
+	margin-left: 520px;
 	width: 80px;
 	font-size: 14px;
 }
@@ -363,6 +363,10 @@ img#collage2 {
 
 								/* COMMENTS  */
 
+body.archive a[name="post"] {
+	margin-left: 340px;
+}
+
 
 div#comments {
 	width: 800px;
@@ -446,7 +450,8 @@ body.archive input{
 
 body.archive textarea {
 	height: 138px;
-	left: -27px;
+	left: -24px;
+	width: 297px;
 }
 
 body.archive label {
