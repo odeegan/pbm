@@ -6,7 +6,7 @@ div#navigation {
 }
 
 div#wrapper {
-	margin-left: 140px;
+	margin-left: 139px;
 	width: 800px;
 }
 
@@ -85,15 +85,12 @@ ul.thumbs {
 ul.thumbs li {
 	float: left;
 	padding: 0;
-	/*margin: 5px 10px 5px 0;*/
 	margin: 0px 0px 0px 0px;
 	list-style: none;
 }
 
 a.thumb {
-	/*padding: 2px;*/
 	display: block;
-	/*border: 1px solid #ccc;*/
 }
 
 ul.thumbs li.selected a.thumb {
@@ -120,7 +117,7 @@ div.navigation div.top {
 
 div#controls {
 	position: absolute;
-	top:558px;
+	top:554px;
 }
 
 div#controls a{
@@ -139,7 +136,7 @@ a.prev {
 }
 
 a.next {
-	left: 784px;
+	left: 782px;
 	background-position: 0px 65px;
 }
 
