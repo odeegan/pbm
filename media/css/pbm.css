@@ -108,10 +108,10 @@ div#line {
 }
 
 div#facebook-meta {
-	position: absolute;
-	margin-top: -20px;
-	margin-left: 727px;
-	width: 80px;
+	left: -65px;
+	top: 50px;
+	position: absolute;	
+	width: 70px;
 }
 
 div#date {
@@ -229,7 +229,7 @@ body.contact div#content {
 	top: 15px;
 }
 
-form, fieldset {
+body.contact form, fieldset {
 	margin: 0px 0px 0px 10px;
 	width: 420px;
 	border: 0px;
@@ -237,7 +237,7 @@ form, fieldset {
 	float: left;
 }
 
-input, textarea{
+body.contact input, body.contact textarea{
 	border: none;
 	width: 300px;
 	height: 34px; 
@@ -249,7 +249,7 @@ input, textarea{
 	border: 1px solid grey;
 }
 
-textarea {
+body.contact textarea {
 	position: relative;
 	height: 138px;
 	margin-left: 19px;
@@ -363,10 +363,9 @@ img#collage2 {
 
 								/* COMMENTS  */
 
-body.archive a[name="post"] {
-	margin-left: 340px;
+body.archive h2 {
+	width: 600px;
 }
-
 
 div#comments {
 	width: 800px;
@@ -383,11 +382,15 @@ div#nocomments {
 	margin-bottom: 60px;
 }
 
+body.archive div#nocomments {
+	margin-bottom: 0px;
+}
+
 
 div#comments ul {
 	list-style: none;
 	margin: 0px;
-	padding: 0px 0px 0px 5px;;
+	padding: 0px 0px 0px 5px;
 }
 
 div#comments ul li {
@@ -416,12 +419,12 @@ span#post_comment {
 }
 
 span#post_comment a {
-	padding: 2px 4px 2px 4px;
+	padding: 3px 5px 3px 5px;
 	background-color: #E5E4C7;
 	font-weight: 100;
 	color: #727272;
 	width: 110px;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 span#post_comment a:hover {
@@ -434,24 +437,27 @@ body.archive form {
 	width: 420px;
 	border: 0px;
 	padding: 0px;
-	height: 400px;
-	
+
 }
 
 body.archive input{
-	border: none;
 	width: 300px;
 	height: 34px; 
-	font-size: 15px;
 	color: #727272;
 	font-family: PT Sans, arial;
 	border: 1px solid grey;
 }
 
+
 body.archive textarea {
 	height: 138px;
-	left: -24px;
 	width: 297px;
+	border: 1px solid grey;
+}
+
+body.archive label {
+	display: block;
+	width: 70px;
 }
 
 body.archive label {
@@ -461,10 +467,10 @@ body.archive label {
 body.archive input[type="submit"] {
 	background-color: #9E9E9E;
 	width: 100px;
-	left: 260px;
 	height: 32px;
 	color: white;
-	margin-left: 285px;
+	margin-left: 272px;
+	margin-bottom: 200px;
 }
 
 
@@ -475,7 +481,6 @@ body.archive input[type="submit"]:hover {
 body.archive a[name="post_comment"] {
 	margin-left: 170px;
 }
-
 
 
 								/* 404, 500  */
