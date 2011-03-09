@@ -252,8 +252,9 @@ input, textarea{
 
 textarea {
 	position: relative;
-	left: -24px;
 	height: 138px;
+	margin-left: 19px;
+	width: 298px;
 }
 
 p#field_sender_name + div, p#field_sender_email + div, p#field_body + div {
