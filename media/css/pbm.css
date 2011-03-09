@@ -109,10 +109,9 @@ div#line {
 
 div#facebook-meta {
 	position: absolute;
-	margin-top: 13px;
-	margin-left: 520px;
+	margin-top: -20px;
+	margin-left: 727px;
 	width: 80px;
-	font-size: 14px;
 }
 
 div#date {
