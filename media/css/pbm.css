@@ -88,6 +88,7 @@ div#post a {
 
 h2.post_title {
 	width: 600px;
+	height: 70px;
 	/*padding-left: 7px;*/
 }
 
@@ -376,6 +377,10 @@ div#comments {
 	margin-bottom: 60px;
 	border-top: 2px solid #CCC;
 	border-left: 2px solid #CCC;
+}
+
+body.archive a[name="post"] {
+	margin-left: 340px;
 }
 
 div#nocomments {
