@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}Manhattan Beach | Los Angeles Photographer{% endblock %}
+{% block bodyclass %}home{% endblock %}
 
 {% block head %}{{ block.super }}
     <link rel="stylesheet" type="text/css" href="/media/css/home.css" />
@@ -8,6 +9,6 @@
 {% endblock %}
 
 {% block body %}
-        <img class="bg" alt="an image from my portfolio" src="{{ flatpage.randomImage.url }}" /> 
+        <p><img class="bg" alt="an image from my portfolio" src="{{ flatpage.randomImage.url }}" /></p>
 {% endblock %} 
 
