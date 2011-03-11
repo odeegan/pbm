@@ -69,7 +69,7 @@ h1 {
 	margin-top: 0px;
 	margin-bottom: 4px;
 	font-style: normal;
-	font-size: 28px;
+	font-size: 25px;
 }
 
 
@@ -94,7 +94,7 @@ div.post a {
 
 h2.post_title {
 	width: 600px;
-	font-size: 30px;
+	font-size: 25px;
 	margin: 2px 0px 5px 0px;
 }
 
@@ -123,7 +123,7 @@ div#facebook-meta {
 
 div.date {
 	float: right;
-	margin-top: -32px;
+	margin-top: -30px;
 	margin-right: 122px;
 	background-color: #E5E4C7;
 	width: 94px;
@@ -134,7 +134,7 @@ div.date {
 
 div.comment_count {
 	float: right;
-	margin-top: -32px;
+	margin-top: -30px;
 	text-align: center;
 }
 
