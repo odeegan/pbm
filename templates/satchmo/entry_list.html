@@ -25,7 +25,7 @@
 	    		{% else %}
 	    			<a name="post{{ entry.id }}">{{ comment_count }} Comments</a>
 	    		{% endif %}
-				<span id="post_comment"><a href="{{ entry.get_absolute_url }}#post_comment">Leave a Comment</a></span>
+				<span class="post_comment"><a href="{{ entry.get_absolute_url }}#post_comment">Leave a Comment</a></span>
 			</h3>
 			{% if comment_count > 0 %}	   
 				{% if comment_count > 8 %}
@@ -41,7 +41,7 @@
 	       			</div>
 	       		{% endif %}
 	       	{% else %}
-	       		<div id="nocomments"></div>		
+	       		<div class="nocomments"></div>		
 	        {% endif %}	       
 	{% endfor %}
 		<div id="pagination">
