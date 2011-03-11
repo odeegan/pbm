@@ -313,11 +313,12 @@ div#contact-info {
 	float: right;
 	width: 320px;
 	height: 280px;
-	top: 0px;
+	top: 15px;
 	padding-left: 50px;
 }
 
-div#contact-info h3{
+div#contact-info h1{
+	font-size: 15px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
