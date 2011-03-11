@@ -42,7 +42,12 @@ urlpatterns = patterns('',
     # search for them in the Entry model using their slug
     (r'^\d{4}/\d{2}/(?P<slug>[-\w]+)/$',
         list_detail.object_detail,
-        object_detail_entry_dict),     
+        object_detail_entry_dict),
+    # redirect broken image links to the article they came from
+    # this should only happen for articles posted before the move to WebFaction
+    (r'^\d{4}/\d{2}/(?P<slug>[-\w]+)/[-\w]+/$',
+        list_detail.object_detail,
+        object_detail_entry_dict),
 )
 
 

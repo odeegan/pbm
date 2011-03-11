@@ -40,7 +40,7 @@ class Entry(models.Model):
     author = models.ForeignKey(User)
     enable_comments = models.BooleanField(default=True)    
     featured = models.BooleanField(default=False)
-    slug = models.SlugField(unique_for_date='pub_date',
+    slug = models.SlugField(max_length=100, unique_for_date='pub_date',
                             help_text="Suggested value automatically generated\
                             from title. Must be unique.")
     status = models.IntegerField(choices=STATUS_CHOICES, default=LIVE_STATUS,
