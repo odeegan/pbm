@@ -36,7 +36,7 @@
 				{% get_comment_list for entry as comment_list %}
 				{% if comment_list %}
 					{% for comment in comment_list %}
-		    			<ul><span class="commenter">[{{ comment.name }}]</span><li> | {{ comment.comment|safe }}</li></ul>
+		    			<ul><li class="commenter">[{{ comment.name }}]</li><li> | {{ comment.comment|safe }}</li></ul>
 		  			{% endfor %} 
 	       			</div>
 	       		{% endif %}
