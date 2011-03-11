@@ -436,7 +436,7 @@ div.comments h3 {
 	color: #FF6666;
 }
 
-span.commenter {
+li.commenter {
 	color: #444444;
 	font-size: 15px;
 	font-style: bold;
