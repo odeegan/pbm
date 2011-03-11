@@ -371,7 +371,7 @@ body.archive h2 {
 	width: 600px;
 }
 
-div#comments {
+div.comments {
 	width: 800px;
 	color: #A7A7A7;
 	font-size: 13px;
@@ -386,7 +386,7 @@ body.archive a[name="post"] {
 	margin-left: 340px;
 }
 
-div#nocomments {
+div.nocomments {
 	margin-bottom: 60px;
 }
 
@@ -395,17 +395,17 @@ body.archive div#nocomments {
 }
 
 
-div#comments ul {
+div.comments ul {
 	list-style: none;
 	margin: 0px;
 	padding: 0px 0px 0px 5px;
 }
 
-div#comments ul li {
+div.comments ul li {
 	display:inline;
 }
 
-div#comments h3 {
+div.comments h3 {
 	font-style: normal;
 	margin: 0px;
 	padding: 3px 0px 3px 0px;
@@ -415,18 +415,18 @@ div#comments h3 {
 	color: #FF6666;
 }
 
-span#commenter {
+span.commenter {
 	color: #444444;
 	font-size: 15px;
 	font-style: bold;
 }
 
-span#post_comment {
+span.post_comment {
 	margin-left: 20px;
 	width: 110px;
 }
 
-span#post_comment a {
+span.post_comment a {
 	padding: 3px 5px 3px 5px;
 	background-color: #E5E4C7;
 	font-weight: 100;
@@ -435,7 +435,7 @@ span#post_comment a {
 	font-size: 14px;
 }
 
-span#post_comment a:hover {
+span.post_comment a:hover {
 	background-color: #CCC;
 }
 
