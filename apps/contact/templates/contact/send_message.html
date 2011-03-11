@@ -6,7 +6,7 @@
 
 {% block header %}{{ block.super }}
     <div id="banner">
-        <img class="bg" "picture of engaged couple" src="/media/images/banner.jpg">    
+        <img class="bg" alt="picture of engaged couple" src="/media/images/banner.jpg">    
         <span id="banner_txt">"Which of my photographs is my favorite? The one I'm going to take tommrow." -Imogen Cunningham</span> 
     </div>
 {% endblock %}
@@ -20,17 +20,17 @@
 		<fieldset>
 			{{ form.sender_name.errors }}
 			<p id="field_{{ form.sender_name.html_name }}">
-			<div>{{ form.sender_name.label }}</div>
+			<label>{{ form.sender_name.label }}</label>
 				{{ form.sender_name }}
 			</p>
 			{{ form.sender_email.errors }}
 			<p id="field_{{ form.sender_email.html_name }}">
-			<div>{{ form.sender_email.label }}</div>			
+			<label>{{ form.sender_email.label }}</label>			
 				{{ form.sender_email }}
 			</p>
 			{{ form.body.errors }}
 			<p id="field_{{ form.body.html_name }}">
-			<div>{{ form.body.label }}</div>
+			<label>{{ form.body.label }}</label>
 				{{ form.body }}
 			</p>
 			{{ form.ham_trap.errors }}

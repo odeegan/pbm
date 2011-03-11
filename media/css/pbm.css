@@ -146,6 +146,11 @@ div.comment_count a:hover{
 }
 
 
+
+								/* social bar */
+
+
+
 #social-bar {
 	background-color: #D3D3D3;
 	height: 37px; 
@@ -154,13 +159,18 @@ div.comment_count a:hover{
 	margin-bottom: 50px;
 }
 
-#social-bar div {
+
+
+
+#social-bar li {
+	display: inline;
+	list-style-type: none;
 	position: relative;
 	float:left;
 	padding: 0px 10px 0px 0px;
 }
 
-#social-bar div a {
+#social-bar li a {
 	display: block;
 	height: 37px;
 	width: 170px;
@@ -258,7 +268,7 @@ body.contact textarea {
 	position: relative;
 	height: 138px;
 	margin-left: 19px;
-	width: 298px;
+	width: 300px;
 }
 
 p#field_sender_name + div, p#field_sender_email + div, p#field_body + div {
@@ -281,6 +291,16 @@ button {
 
 button:hover {
 	background-color: #7E7E7E;
+}
+
+
+fieldset label {
+	float: left;
+	margin-top: 4px;
+}
+
+#field_body label {
+	
 }
 
 
