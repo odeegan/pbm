@@ -229,8 +229,13 @@ body.contact div#content {
 	top: 15px;
 }
 
+body.contact h1 {
+	font-size: 18px;
+}
+
+
 body.contact form, fieldset {
-	margin: 0px 0px 0px 10px;
+	margin: 2px 0px 0px 10px;
 	width: 420px;
 	border: 0px;
 	padding: 0px;
@@ -286,10 +291,9 @@ button:hover {
 div#contact-info {
 	position: relative;
 	float: right;
-	/*border-left: 2px solid #9E9E9E;*/
 	width: 320px;
 	height: 280px;
-	top: 15px;
+	top: 0px;
 	padding-left: 50px;
 }
 

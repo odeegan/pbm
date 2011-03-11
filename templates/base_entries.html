@@ -2,16 +2,17 @@
 
 {% block head %}{{ block.super }}
     <link rel="stylesheet" href="/media/css/blog.css" type="text/css" />   
+	<meta name="description" content="photos from my recent photo shoots">
 {% endblock %}
 
-{% block title %}Blog{% endblock %}
+{% block title %}{{ block.super }} | Blog{% endblock %}
 
 
 {% block bodyclass %}entries{% endblock %}
 
 {% block header %}{{ block.super }}
     <div id="banner">
-        <img class="bg" src="/media/images/banner.jpg"><br />
+        <img class="bg" alt="picture of engaged couple" src="/media/images/banner.jpg"><br />
         <span id="banner_txt">"Which of my photographs is my favorite? The one I'm going to take tomorrow." -Imogen Cunningham</span> 
     </div>
     

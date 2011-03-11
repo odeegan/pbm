@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Contact Me{% endblock %}
+{% block title %}{{ block.super }} | Contact Me{% endblock %}
 
 {% block bodyclass %}contact{% endblock %}
 
 {% block header %}{{ block.super }}
     <div id="banner">
-        <img class="bg" src="/media/images/banner.jpg">    
+        <img class="bg" "picture of engaged couple" src="/media/images/banner.jpg">    
         <span id="banner_txt">"Which of my photographs is my favorite? The one I'm going to take tommrow." -Imogen Cunningham</span> 
     </div>
 {% endblock %}
@@ -43,16 +43,16 @@
 	</form>
 	<div id="contact-info">
 		<div id="text">
-			<h3>prefer to mail me directly?</h3>
+			<h1>prefer to mail me directly?</h1>
 			<p>monika@photosbymonika.com</p>
-			<h3>home base</h3>
+			<h1>home base</h1>
 			<p>Manhattan Beach, CA 90266 <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=90266&aq=&sll=33.885451,-118.410902&sspn=0.040115,0.077162&ie=UTF8&hq=&hnear=Manhattan+Beach,+California+90266&z=13"><img id="pin" src="/media/images/pin.jpg"></a></p>
-			<h3>reviews</h3>
-			<p><a href="http://www.yelp.com/biz/photos-by-monika-manhattan-beach-2"><img id="yelp" src="/media/images/yelp.jpg"></a></p>
-			<h3>elsewhere on the web</h3>
+			<h1>reviews</h1>
+			<p><a href="http://www.yelp.com/biz/photos-by-monika-manhattan-beach-2"><img id="yelp" alt="link to yelp reviews" src="/media/images/yelp.jpg"></a></p>
+			<h1>elsewhere on the web</h1>
 			<p>
-			<a href="http://www.facebook.com/pages/Photos-By-Monika/125926834112915"><img id="facebook" src="/media/images/facebook.jpg"></a>
-			<a href="http://twitter.com/PhotosbyMonika"><img src="/media/images/twitter.jpg"></a>
+			<a href="http://www.facebook.com/pages/Photos-By-Monika/125926834112915"><img id="facebook" alt="link to facebook page" src="/media/images/facebook.jpg"></a>
+			<a href="http://twitter.com/PhotosbyMonika"><img alt="link to my twitter page" src="/media/images/twitter.jpg"></a>
 			</p>
 		<div id="text">
 	</div>
