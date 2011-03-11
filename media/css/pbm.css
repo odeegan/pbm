@@ -79,16 +79,13 @@ h1 {
 
 
 div.post {
-	padding: 10px 0px 30px 0px;
+	padding: 5px 0px 30px 0px;
 }
 
 div.post p {
 	margin: 1em 0 1em 0em;
 }
 
-div.post + p {
-	margin-top: .3em;
-}
 
 div.post a {
 	color: #A9A546;
