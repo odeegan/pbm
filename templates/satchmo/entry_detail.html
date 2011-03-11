@@ -3,13 +3,13 @@
 {% block title %}{{ block.super }} | Archive{% endblock %}
 
 {% block head %}{{ block.super }}
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"></script>    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" /></script>    
 {% endblock %}
 
 {% block bodyclass %}archive{% endblock %}
 
 {% block content %}
-	<div id="facebook-meta"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FManhattan-Beach-CA%2FPhotos-By-Monika%2F125926834112915&amp;layout=box_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:65px;" allowTransparency="true"></iframe>
+	<div id="facebook-meta"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FManhattan-Beach-CA%2FPhotos-By-Monika%2F125926834112915&amp;layout=box_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:65px;" allowTransparency="true" /></iframe>
 	</div>
 	{% load comments %}
 	<h2><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h2>
