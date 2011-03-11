@@ -86,6 +86,10 @@ div.post p {
 	margin: 1em 0 1em 0px;
 }
 
+div.post + p {
+	margin-top: .4em;
+}
+
 div.post a {
 	color: #A9A546;
 	text-decoration: underline; 
