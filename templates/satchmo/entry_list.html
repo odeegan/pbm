@@ -3,22 +3,22 @@
 {% block title %}{{ block.super }} | Latest entries{% endblock %}
 
 {% block content %}
-<div id="facebook-meta"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FManhattan-Beach-CA%2FPhotos-By-Monika%2F125926834112915&amp;layout=box_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:65px;" allowTransparency="true" /></iframe>
+<div id="facebook-meta"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FManhattan-Beach-CA%2FPhotos-By-Monika%2F125926834112915&amp;layout=box_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;font&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:65px;" allowTransparency="true"></iframe>
 	</div>
 	{% load comments %}
 	{% for entry in object_list %}
 		<h2 class="post_title"><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h2>
-		<div id="date">{{ entry.pub_date|date:"M j, Y" }}</div>
+		<div class="date">{{ entry.pub_date|date:"M j, Y" }}</div>
 		{% get_comment_count for entry as comment_count %}
-		  	<div id="comment_count"><a href="#post{{ entry.id }}">{{ comment_count }}
+		  	<div class="comment_count"><a href="#post{{ entry.id }}">{{ comment_count }}
 		  	{% if comment_count == 1 %}
 		  	Comment
 		  	{% else %}
 		  	Comments
 		  	{% endif %}
 		  	</a></div>
-		  	<div id="line"></div>
-		  	<div id="post">{{ entry.body|safe }}</div>
+		  	<div class="line"></div>
+		  	<div class="post">{{ entry.body|safe }}</div>
  			<h3>
 	    		{% if comment_count == 1 %}
 	    			<a name="post{{ entry.id }}">{{ comment_count }} Comment</a>
@@ -29,14 +29,14 @@
 			</h3>
 			{% if comment_count > 0 %}	   
 				{% if comment_count > 8 %}
-		  			<div id="comments" style="overflow:scroll; height:200px;">
+		  			<div class="comments" style="overflow:scroll; height:200px;">
 		  		{% else %}
-		  			<div id="comments">	
+		  			<div class="comments">	
 		  		{% endif %}
 				{% get_comment_list for entry as comment_list %}
 				{% if comment_list %}
 					{% for comment in comment_list %}
-		    			<ul><span id="commenter">[{{ comment.name }}]</span><li> | {{ comment.comment|safe }}</li></ul>
+		    			<ul><span class="commenter">[{{ comment.name }}]</span><li> | {{ comment.comment|safe }}</li></ul>
 		  			{% endfor %} 
 	       			</div>
 	       		{% endif %}

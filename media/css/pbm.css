@@ -77,11 +77,11 @@ h2 {
 								/* BLOG  */
 
 
-div#post {
+div.post {
 	padding: 10px 0px 30px 0px;
 }
 
-div#post a {
+div.post a {
 	color: #A9A546;
 	text-decoration: underline; 
 }
@@ -92,7 +92,7 @@ h2.post_title {
 }
 
 
-div#post img {
+div.post img {
 	display: block;
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -101,7 +101,7 @@ div#post img {
 }
 
 
-div#line {
+div.line {
 	width: 800px;
 	height: 2px;
 	background-color: #D3D3D3;
@@ -114,7 +114,7 @@ div#facebook-meta {
 	width: 70px;
 }
 
-div#date {
+div.date {
 	float: right;
 	margin-top: -29px;
 	margin-right: 122px;
@@ -125,13 +125,13 @@ div#date {
 	padding: 3px 2px 3px 2px;
 }
 
-div#comment_count {
+div.comment_count {
 	float: right;
 	margin-top: -29px;
 	text-align: center;
 }
 
-div#comment_count a {
+div.comment_count a {
 	display: block;
 	width: 110px;
 	padding: 3px 2px 3px 2px;
@@ -141,7 +141,7 @@ div#comment_count a {
 
 
 
-div#comment_count a:hover{
+div.comment_count a:hover{
 	background-color: #CCC;
 }
 

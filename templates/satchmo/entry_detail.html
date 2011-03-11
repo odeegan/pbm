@@ -13,11 +13,11 @@
 	</div>
 	{% load comments %}
 	<h2><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h2>
-	<div id="date">{{ object.pub_date|date:"M j, Y" }}</div>
+	<div class="date">{{ object.pub_date|date:"M j, Y" }}</div>
 	{% get_comment_count for object as comment_count %}
-	<div id="comment_count"><a href="#post_comment">{{ comment_count }} Comments</a></div>
-	<div id="line"></div>
-	<div id="post">{{ object.body|safe }}</div>
+	<div class="comment_count"><a href="#post_comment">{{ comment_count }} Comments</a></div>
+	<div class="line"></div>
+	<div class="post">{{ object.body|safe }}</div>
 
 		{% get_comment_count for object as comment_count %}
  			<h3>
@@ -41,10 +41,10 @@
 	       			</div>
 	       		{% endif %}
 	       	{% else %}
-	       		<div id="nocomments"></div>		
+	       		<div class="nocomments"></div>		
 	        {% endif %}
 	<a name="post_comment"></a>        	       
-	<div id="comment_form">
+	<div class="comment_form">
 		{% render_comment_form for object %}
 	</div>
 
