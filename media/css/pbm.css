@@ -81,6 +81,10 @@ div.post {
 	padding: 10px 0px 30px 0px;
 }
 
+div.post {
+	margin: .9em;
+}
+
 div.post a {
 	color: #A9A546;
 	text-decoration: underline; 
