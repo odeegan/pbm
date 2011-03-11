@@ -49,7 +49,8 @@ div#banner span {
 /* CONTENT */
 
 div#content {
-	font-family: PT Sans, arial;
+	/*font-family: PT Sans, arial;*/
+	font-family: arial;
 	position: relative;
 	top: 45px;
 	color: #727272;
@@ -63,8 +64,8 @@ a {
 }
 
 
-h2 {
-	font-family: PT Sans Narrow, arial;
+h1 {
+	font-family: arial;
 	margin-top: 0px;
 	margin-bottom: 4px;
 	font-style: normal;
@@ -92,7 +93,8 @@ div.post a {
 
 h2.post_title {
 	width: 600px;
-	/*padding-left: 7px;*/
+	font-size: 30px;
+	margin: 2px 0px 5px 0px;
 }
 
 
@@ -350,7 +352,6 @@ img#facebook {
 body.sessions div#content ul {
 	width: 300px;
 	margin: 7px 0px 0px 18px;
-	font-style: italic;
 }
 
 body.sessions div#content ul {
@@ -359,7 +360,9 @@ body.sessions div#content ul {
 	padding-left: 0px;
 }
 
-
+body.sessions h1 {
+	font-size: 20px;
+}
 
 
 div#right_txt {
@@ -372,7 +375,6 @@ div#right_txt {
 div#left_txt {
 	width: 350px;
 	left: 20px;
-	font-style: italic;	
 }
 
 div#left_txt p {
