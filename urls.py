@@ -54,11 +54,12 @@ urlpatterns = patterns('',
 # if we're runnning in dev, change how we serve media files
 import socket
 HOSTNAME = socket.gethostname()
-if HOSTNAME == 'box':
+if HOSTNAME == 'odeegan-desktop':
     urlpatterns +=  patterns('', 
+                (r'^media/www.photosbymonika.com/media/uploads/(?P<old>.*)$', redirect_to, {'url': '/media/uploads/%(old)s'}),
                 (r'^media/(?P<path>.*)$', 
                 'django.views.static.serve',
-                { 'document_root': '/home/odeegan/workspace/pbm/pbm/media' }),
+                { 'document_root': '/home/odeegan/workspace/photosbymonika/pbm/media' }),
         )
 
 # add our catchall URL at the end
